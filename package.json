@@ -1,0 +1,12 @@
+{
+  "name": "conventional-festive-frolics",
+  "version": "1.0.0",
+  "description": "Event and Hall Booking System",
+  "scripts": {
+    "start": "start http://localhost:5000/Homepage.aspx && run_project.bat",
+    "dev-server": "node server.js",
+    "start:fallback": "npm run dev-server"
+  },
+  "author": "Antigravity",
+  "license": "ISC"
+}

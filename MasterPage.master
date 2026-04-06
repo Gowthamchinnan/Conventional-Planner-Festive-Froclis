@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Conventional Planner Festive Froclis</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.tools.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            margin-left: 0px;
+        }
+        .style2
+        {
+            top: 26px;
+            left: 66px;
+            position: relative;
+            height: 250px;
+            width: 820px;
+        }
+        </style>
+</head>
+<body>
+   <form id="Form1" name="f1" runat ="server" >
+<div id="wrap">
+  <div id="top_box">
+  <br />
+ 
+    <div id="logo">
+     
+       </div>
+    <div id="menu">
+    <ul class="style1">
+        <li><a href="HomePage.aspx"   class="active">Home</a></li>
+        <li><a href="AdminLogin.aspx"  >Admin</a></li>
+        <li><a href="OwnerLogin.aspx"  >Client</a></li>
+        <li>
+        <a href ="UserLogin.aspx" >User</a>
+        </li>
+       
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="clear">
+     <h1 style ="color :White ; text-align :center; font-size :xx-large ;"> Conventional Planner Festive Froclis </h1>
+    </div>
+  </div>
+  <div class="content_top"></div>
+  <div id="content">
+    <div id="prew_box">
+	
+	         <div class="scrollable">
+				<div class="items">
+					<div class="item">
+					  <div class="header1">
+					<%--<img src="images/slide3.jpg" alt="" title="" />--%>
+                      
+					  <img  src ="images/Image1/16.jpg" alt="" title="" class="style2" /></div> 
+           
+					</div> <!-- item -->
+					<div class="item">
+					    <div class="header2">
+						
+						  <%-- <img src="images/slide2.jpg" alt="" title="" />--%>
+
+                          <img src="images/Image1/14.jpg" alt="" title="" 
+                              
+                              
+                             class="style2" />
+
+                   
+	
+						
+						</div>						
+					</div> <!-- item -->
+					<div class="item">
+					    <div class="header3">
+						
+						  <img  src ="images/Image1/10.jpg" title=""  class="style2" />                       
+                              
+                           
+						
+						</div>						
+					</div> <!-- item -->
+					
+					<div class="item">
+					    <div class="header4">
+						
+						  
+                             <img src="images/Image1/inner_banner2.jpg"" title="" 
+                              
+                              
+                             class="style2" />
+						
+						</div>						
+					</div> <!-- item -->											
+					
+				</div> <!-- items -->
+			</div> <!-- scrollable -->
+			<div style="height: 10px"></div>
+			<div >
+           
+                   <table >
+                   <tr>
+                   <td>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False" ForeColor="#009933">
+            <DynamicMenuItemStyle HorizontalPadding="80px" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Homepage" Value="Homepage">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminLogin.aspx" Text="Admin Login" 
+                    Value="Admin Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/OwnerLogin.aspx" Text="Client Login" 
+                    Value="Client Login"></asp:MenuItem>
+                <asp:MenuItem Text="User Login" Value="User Login" 
+                    NavigateUrl="~/UserLogin.aspx"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="80px" />
+        </asp:Menu>
+                   
+                   </td>
+                   </tr>
+                   <tr>
+                   <td>
+        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False" ForeColor="#009900">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="20px" ItemSpacing="5px" 
+                VerticalPadding="5px" />
+            <Items>
+                <asp:MenuItem Text="Decorator" Value="Decorator">
+                    <asp:MenuItem NavigateUrl="~/NewDecorator.aspx" Text="New Decorator" 
+                        Value="New Decorator"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewEditDecorator.aspx" Text="View Edit Decorator" 
+                        Value="View Edit Decorator"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Decoration" 
+                    Value="Decoration">
+                    <asp:MenuItem NavigateUrl="~/InsertDecorationStyle.aspx" Text="New Decoration" 
+                        Value="New Decoration"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewDecorationDetails.aspx" 
+                        Text="View Decoration" Value="View Decoration"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Catering" Value="Catering">
+                    <asp:MenuItem NavigateUrl="~/NewCatering.aspx" Text="New Catering Service" 
+                        Value="New Catering Service"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewEditCateringDetails.aspx" 
+                        Text="View Edit Catering Details" Value="View Edit Catering Details">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Food Items" 
+                    Value="Food Items">
+                    <asp:MenuItem NavigateUrl="~/FoodItemDetails.aspx" Text="Add Food Items" 
+                        Value="Add Food Items"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewFoodItems.aspx" Text="View Food Items" 
+                        Value="View Food Items"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Studio" Value="Studio">
+                    <asp:MenuItem NavigateUrl="~/NewStudio.aspx" Text="New Studio Details" 
+                        Value="New Studio Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/InsertPackageDetails.aspx" 
+                        Text="New Package Details" Value="New Package Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewStudioandPackageDetails.aspx" 
+                        Text="View Studio and Package" Value="View Studio and Package">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Moisoft" Value="Moisoft">
+                    <asp:MenuItem NavigateUrl="~/InsertMoisoftDetails.aspx" 
+                        Text="New Moisoft Details" Value="New Moisoft Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/InsertMoidsoftServiceDetails.aspx" 
+                        Text="Moisoft Service Details" Value="Moisoft Service Details">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewMoiandMoiserviceDetails.aspx" 
+                        Text="View Moisoft and Service Details" 
+                        Value="View Moisoft and Service Details"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewHallBookingDetails.aspx" 
+                    Text="View Hall Booking" Value="View Hall Booking"></asp:MenuItem>
+                <asp:MenuItem Text="View User/Client" Value="View User/Client">
+                    <asp:MenuItem NavigateUrl="~/AdminViewUserDetails.aspx" 
+                        Text="View User Details" Value="View User Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewOwnerDetails.aspx" 
+                        Text="View Client Details" Value="View Client Details"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="20px" />
+        </asp:Menu>
+                   
+                   </td>
+                   
+                   </tr>
+                   <tr>
+                   <td>
+        <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False" ForeColor="#009900">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="75px" ItemSpacing="5px" 
+                VerticalPadding="5px" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/RegisterHall.aspx" Text="New Hall" 
+                    Value="New Hall"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/OwnerViewEditHallDetails.aspx" Text="Edit Hall" 
+                    Value="Edit Hall"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/OwnerViewHallBookingDetails.aspx" 
+                    Text="View Hall Booking" Value="View Hall Booking"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="75px" />
+        </asp:Menu>
+                   
+                   </td>
+                   
+                   </tr>
+                   <tr>
+                   <td>
+        <asp:Menu ID="Menu4" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False" ForeColor="#009900">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="15px" ItemSpacing="5px" 
+                VerticalPadding="5px" />
+            <Items>
+                <asp:MenuItem Text="Account Details" Value="Account Details">
+                    <asp:MenuItem NavigateUrl="~/BankDetails.aspx" Text="Bank Account Details" 
+                        Value="Bank Account Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AmountUpdate.aspx" Text="Amount Update" 
+                        Value="Amount Update"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewAccountDetails.aspx" Text="View Account" 
+                        Value="View Account"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserViewDecoration.aspx" Text="View Decoration" 
+                    Value="View Decoration"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserViewCatering.aspx" Text="View Catering" 
+                    Value="View Catering"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserViewStudioandPackageDetails.aspx" 
+                    Text="View Studio" Value="View Studio"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserViewMoisoftandServiceDetails.aspx" 
+                    Text="View Moisoft" Value="View Moisoft"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/HallSearch.aspx" Text="Search Hall" 
+                    Value="Search Hall"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AmountPayment.aspx" Text="Payment" Value="Payment">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserViewBookingDetails.aspx" Text="View Booking" 
+                    Value="View Booking"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="15px" />
+        </asp:Menu>
+                   
+                   </td>
+                   
+                   </tr>
+                     </table>
+            <br /><br /> <br /><br />  <br />
+             </div> <!-- create automatically the point dor the navigation depending on the numbers of items -->		   
+			  
+                <div style="clear: both; padding-left :150px;" >
+              <%--<div style ="padding-left :100px;padding-right :100px;">    --%>           
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                    <%--</div>--%>
+
+               
+                 
+               
+                 
+             </div>
+   
+
+    </div>
+    
+    
+  </div>
+  <div class="content_bot"></div>
+  
+</div>
+</form></body>
+</html>
